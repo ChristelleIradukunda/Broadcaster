@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    background-image: url(../Assets/photo.jpg);
+    background-size: cover;
+    height: 100vh auto;
+}
+.container{
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(129, 139, 139);
+    padding: 20px;
+    width: 70%;
+    height: 90vh;
+}
+.two-parts{
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    width: auto;
+    height: auto;
+
+}
+@media screen and (max-width:600px){
+form{
+    width: 70vw;
+}
+.two-parts{
+    grid-template-columns: 9fr .5fr;
+}
+}
+.two-parts .imge{
+    margin: 0px 50px 0px -150px;
+ 
+}
+.two-parts{
+    height: auto;
+    width: auto;
+}
+.in-touch{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 40px 0px 100px;
+    
+}
+.stay p{
+color: rgb(248, 247, 246);
+font-size: 25px;
+margin: 20px 0px 0px 0px;
+}
+form{
+    width: 50vw;
+    height: 50vh;
+    color: brown;
+    margin: 10px 40px 0px 0px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"]{
+    padding: 10px;
+    border: none;
+    width: 70%;
+    height: 4vh;
+    border-bottom: 1px solid olivedrab;
+    font-size: 1em;
+}
+/* #icons{
+    
+} */
+
+.container button{
+    width: 30%;
+    height: 5vh;
+    background-color: orangered;
+    margin: 10px 19%;
+    outline: orangered;
+    color: rgb(243, 197, 117);
+}
+
+.imge p{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.imge a{
+    text-decoration: none;
+    color: rgb(184, 81, 44);
+    font-weight: 700;
+    font-size: 20px;
+}
