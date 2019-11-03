@@ -9,19 +9,23 @@
 }
 .NavBar{
     display: grid;
-    grid-template-columns: 6fr 2fr 2fr 2fr;
+    grid-template-columns: 6fr 2fr 2fr 2fr 2fr;
     color: blanchedalmond;
     font-size: 20px;
     height: 9vh;
     background-color: rgba(26, 67, 70, 0.459); 
 }
 .NavBar img{
-    margin-top: -50px;
-    
+    margin-top: -50px;   
+}
+.NavBar a{
+    text-decoration: none;
+    color: #fff;
 }
 #btn{
     padding: 15px;
 }
+
 .message{
     color: cornsilk;
     left: 50%;
