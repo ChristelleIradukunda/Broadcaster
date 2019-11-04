@@ -2,27 +2,49 @@
     padding: 0;
     margin: 0;
 }
+.NavBar{
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr 2fr;
+    color: blanchedalmond;
+    font-size: 20px;
+    height: 9vh;
+    background-color: rgba(26, 67, 70, 0.459); 
+}
+.NavBar img{
+    margin-top: -50px;   
+}
+.NavBar a{
+    text-decoration: none;
+    color: #fff;
+}
+#btn{
+    padding: 15px;
+}
+
 .main-container{
     background-image: url(../Assets/photo.jpg);
     background-size: cover;
-    height: 100vh auto;
+    height: 110vh;
 }
 .container{
-    top: 60%;
+    top: 58%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    background-color: rgb(129, 139, 139);
+    background-color: rgba(129, 139, 139, 0.466);
     padding: 20px;
     width: 70%;
     height: 90vh;
 }
+#unique{
+    width: 20%;
+}
 .two-parts{
     background-color: cadetblue;
     display: grid;
+    margin: 0px 0px 6px 0px;
     grid-template-columns: 9fr 1fr;
-    width: auto;
-    height: auto;
+    
 
 }
 @media screen and (max-width:600px){
@@ -43,14 +65,17 @@ form{
 }
 .in-touch{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 0px 40px 0px 100px;
     
+}
+.stay {
+    text-align: center;
 }
 .stay p{
 color: rgb(248, 247, 246);
 font-size: 25px;
-margin: 20px 0px 0px 0px;
+margin: 0px 0px 20px 0px;
 }
 form{
     width: 50vw;
@@ -69,13 +94,19 @@ input[type="password"]{
     border-bottom: 1px solid olivedrab;
     font-size: 1em;
 }
-.container button{
+a{
+    text-decoration: none;
+}
+.container #unique{
     width: 30%;
     height: 5vh;
-    background-color: orangered;
+    text-align: center;
+    padding: 8px 0px 0px 0px;
+    background-color: rgb(192, 77, 35);
     margin: 10px 19%;
+    font-size: 19px;
     outline: orangered;
-    color: rgb(243, 197, 117);
+    color: rgb(241, 236, 227);
 }
 
 .imge p{
