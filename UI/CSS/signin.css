@@ -66,6 +66,9 @@ input[type="text"]{
     text-align: center;
     font-size: 19px;
 }
+a{
+    text-decoration: none;
+}
 
 .create-new{
     text-align: center;
