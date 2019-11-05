@@ -57,6 +57,9 @@ height: 110vh;
     border-radius:50%;
     margin: 20px 0px 0px 50px;
 }
+a{
+    text-decoration: none;
+}
 .left-NavBar p{
     color: rgb(50, 184, 184);
     text-align: center;
@@ -130,5 +133,44 @@ height: 110vh;
     grid-gap: 10%;
     font-size: 18px;
     color: rgb(27, 98, 100);
+    
+}
+/* ========================================= My Account ================================================ */
+.profile{
+    background-color: rgb(132, 144, 170);
+    margin: 20px;
+    color: honeydew;
+   
+}
+.profile img{
+    border-radius: 50%;
+    margin: 10px;
+}
+.profile p{
+    margin: 0px 0px 10px 10px;
+    font-size: 18px;
+
+    
+}
+
+.top-profile{
+background-color: rgb(226, 219, 219);
+color: rgb(105, 112, 105);
+
+}
+.top-profile p{
+    font-size: 25px;
+}
+.user-info{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    margin: 5% 0px 0px 50px;
+    padding: 10px;
+}
+
+table tr td{
+    height: 5vh;
+    color: rgb(58, 56, 56);
+    font-size: 18px;
     
 }
