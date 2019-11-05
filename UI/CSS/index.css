@@ -73,13 +73,15 @@ font-size: 20px;
     list-style-type: none;
 }
 video{
-    height: 40vh;
+    max-width: 100%;
+    display: block;
+    height: auto;
    
 }
 .lesson{
    
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: repeat( auto-fill, minmax(600px, 3fr));
     font-size: 2em;
     padding: 10px;
     color: rgb(151, 64, 32);
