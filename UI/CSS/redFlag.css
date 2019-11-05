@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   
+   background-color: rgb(226, 226, 221);
+}
+.NavBar{
+    background-image: url(../Assets/photo.jpg);
+    height: 7vh;
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 7fr .5fr .5fr 1fr;;
+    color: blanchedalmond; height: 100vh;
+    background-size:cover;
+    font-size: 20px;
+    height: 9vh;
+    background-color: rgba(26, 67, 70, 0.459); 
+}
+.NavBar img{
+    margin-top: -50px;   
+}
+.NavBar a{
+    text-decoration: none;
+    color: #fff;
+}
+#btn{
+    padding: 15px;
+}
+.details{
+    background-color:  rgb(187, 187, 184);
+    width: 60%;
+    left: 50%;
+    top: -8%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    color: rgb(50, 50, 77);
+    font-size: 1.1em;
+}
+table{
+    margin-left: 20%;
+}
+tr td{
+    padding: 10px;
+}
+#big{
+    height: 7vh;
+    width: 20vw;
+    border-radius: 4px;
+    border: none;
+}
+#corrup-title{
+    height: 7vh;
+    width: 20vw;
+    border: none;
+    border-radius: 4px;
+}
+#corrup-body{
+    height: 15vh;
+    width: 30vw;
+    border: none;
+    border-radius: 4px;
+}
+.home {
+    background-color: rgb(197, 189, 189);
+}
+#hme{
+    padding: 8px;
+}
+#hme a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+.report{
+    background-color: rgb(190, 97, 21);
+    width: 15vw;
+    height: 5vh;
+    text-align: center;
+    color: white;
+    padding-top:10px;
+    margin: 60px 0px 20px 300px;
+    
+}
+.what{
+    height: 20vh auto;
+    width: 80vw;
+    background-color: rgb(60, 98, 156);
+    text-align: center;
+    left: 50%;
+    top: 10%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+
+}
+.what p{
+    color: white;
+    font-size: 20px;
+    max-width: 70%;
+    padding: 20px 0px 20px 150px;
+}
