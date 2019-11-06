@@ -1,0 +1,89 @@
+#action{
+    height: 4vh;
+    width: 7vw;
+    color: rgb(253, 253, 253);
+   margin: 5px;
+   padding: 5px;
+
+}
+table{
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid rgb(165, 161, 161);   
+}
+.report{
+background-color: rgb(214, 214, 209);
+}
+.report td{
+    color: rgb(59, 61, 61);
+}
+.report a{
+    color: rgb(63, 65, 65);
+}
+.report a:hover{
+    color: rgb(16, 117, 163);
+}
+.tableArea tr th{
+    background-color: rgb(172, 167, 167);
+    height: 5vh;
+    color: rgb(42, 88, 141);
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+.tableArea tr, .tableArea td, .tableArea th {
+    border-bottom: 1px solid rgb(185, 181, 181);  
+}
+.tableArea{
+    margin: 2% 0px 0px 7%;
+}
+.pend{
+    background-color: rgb(77, 107, 74);
+}
+.reject{
+    background-color: rgb(153, 61, 24);
+}
+.resolve{
+    background-color: rgb(44, 107, 36);
+}
+.inv{
+    background-color: rgb(63, 101, 122);
+}
+.delete{
+    background-color: rgb(143, 83, 83);
+    height: 4vh;
+    width: 7vw;
+    color: white;
+   margin: 5px;
+   padding: 5px;
+}
+td{
+    max-width: 30%;
+}
+.delete:hover{
+    background-color: rgb(105, 32, 32);
+}
+.here{
+    margin: 3% 0px 0px 30%;
+    font-size: 1.1em;
+    color: rgb(83, 81, 81);
+
+}
+.here a{
+    color: rgb(177, 119, 11);
+}
+.home {
+    color: rgb(245, 239, 239);
+    background-color: rgb(104, 105, 105);
+}
+
+#hme a{
+    text-decoration: none;
+    color: rgb(245, 239, 239); 
+    padding: 8px;
+    
+}
+table a{
+    color: rgb(56, 55, 56);
+}
