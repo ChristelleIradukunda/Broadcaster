@@ -39,7 +39,7 @@ height: 110vh;
     background-color: rgb(240, 235, 230);
 }
 .home{
-    background-color: rgb(196, 190, 191);
+    background-color: rgb(160, 155, 156);
     height: 5vh;
 }
 .report-buttons{
@@ -93,14 +93,18 @@ a{
     margin-top: 10%;
 }
 .home {
-    color: rgb(32, 32, 32);
+    color: rgb(250, 245, 245);
+  
+} 
+.home i{
+    font-size: 20px;
 }
 #hme{
     padding: 8px;
 }
 #hme a{
     text-decoration: none;
-    color: rgb(27, 27, 27);
+    color: rgb(250, 243, 243);
 }
 #butons{
     color: aliceblue;
@@ -164,7 +168,7 @@ color: rgb(105, 112, 105);
 .user-info{
     display: grid;
     grid-template-columns: 5fr 5fr;
-    margin: 5% 0px 0px 50px;
+    margin: 1% 0px 0px 30px;
     padding: 10px;
 }
 
@@ -173,4 +177,35 @@ table tr td{
     color: rgb(58, 56, 56);
     font-size: 18px;
     
+}
+
+.status-report{
+background-color: rgb(27, 98, 100);
+color: white;
+margin: 20px;
+height: 9vh;
+width: 12vw;
+text-align: center;
+padding-top: 15%;
+font-size: 1.2em;
+}
+.status{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    width: 60%;
+    margin-left: 10%;
+}
+.status-report:hover{
+    background-color: rgb(5, 74, 77);
+   
+}
+table{
+    width: 50%;
+}
+.status-title{
+height: 5vh;
+background-color: gray;
+text-align: center;
+color: white;
+margin: 3%;
 }

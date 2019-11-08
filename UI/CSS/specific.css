@@ -1,0 +1,43 @@
+.Container{
+    background-image: url(../Assets/photo.jpg);
+    background-size: cover;
+    height: 100vh auto;
+    }
+.header{
+    display: grid;
+    grid-template-columns: 6fr 1.5fr;
+    text-align: end;
+    padding:10px;
+}
+
+.User-info{
+    margin: 5% 0px 0px 10%;
+    padding: 10px;
+    width: 70%;
+    font-size: 1.1em;
+    
+}
+.Container{
+    background-image: url(../Assets/photo.jpg);
+    background-size: cover;
+    height: 110vh auto;
+    }
+.Report{
+    height: 100vh auto;
+    background-color: rgb(240, 235, 230);
+}
+.report-title #paragraph{
+text-align: center;
+font-size: 1.5em;
+}
+
+.report-title  img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.manage a{
+    color: rgb(16, 100, 156);
+    margin: 0px 0px 0px 7%;
+    padding-top: 7%;
+}
