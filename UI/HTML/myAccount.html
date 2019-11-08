@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/userAccount.css">
+    <link rel="stylesheet" href="../CSS/myAccount.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="Container">
         <div class="NavBar trial">
             <div><img src="../Assets/log.png" alt="" width="150" height="150"></div>
             <div id="btn"><a href="index.html"><i class="fa fa-home">&nbsp</i></a></div>
@@ -22,15 +23,24 @@
             <div class="left-NavBar ">
                
                 <div class="menu">
-                <div id="butons" class="first">My Account</div>
-                <div id="butons">Red Flag</div>
-                <div id="butons">Intervation</div>
-                <div id="butons">Logout</div>
+                        <a href="userAccount.html">
+                                <div id="butons" class="first">Dashboard</div>
+                            </a>
+                            
+                            <a href="intervention.html">
+                                <div id="butons">Intervention</div>
+                            </a>
+                            <a href="redFlags.html">
+                                    <div id="butons">Red flag</div>
+                                </a>
+                            <a href="index.html">
+                                <div id="butons">Logout</div>
+                            </a>
                 </div>
             </div>
             
 
-            <div class="report">
+            <div class="Report">
                 <div class="profile">
                     <div class="top-profile">
                         <p><i class="fa fa-user">&nbsp</i>Profile</p>
@@ -43,12 +53,12 @@
                     </div>
                    <div class="user-info">
 
-                    <div >
-                        <table >
-                            <tr><td>First Name:</td><td> Christelle </td></tr>
-                            <tr><td>Last Name:</td><td>Iradukunda</td></tr>
-                            <tr><td>Email:</td><td>Iradukundachris24@gmail.com</td></tr>
-                            <tr><td>Phone number:</td><td>+250787358600</td></tr>
+                    <div>
+                        <table>
+                            <tr><td>First Name:</td><td> Abooh  </td></tr>
+                            <tr><td>Last Name:</td><td>Scobedo</td></tr>
+                            <tr><td>Email:</td><td>abooh4@gmail.com</td></tr>
+                            <tr><td>Phone number:</td><td>+25078800000</td></tr>
                         </table>
                     </div>
 
@@ -60,8 +70,24 @@
                             <tr><td>Nationality:</td><td>Rwanda</td></tr>
                             
                         </table>
+                      
                     </div>
+                    
+                    
                    </div>
+                   <div class="status-title">Red flag records</div>
+                   <div class="status">
+                        <div class="status-report" >Pending 4</div>
+                        <div class="status-report" > Resolved 2</div>
+                        <div class="status-report" >Rejected 1</div>
+                        <div class="status-report" >Under Investigation 1</div>
+                </div>
+                <div class="status-title">Dangers recorded</div>
+                   <div class="status">
+                        <div class="status-report" id="pending">Pending 5</div>
+                        <div class="status-report" id="pending"> Resolved 2</div>
+               
+                </div>
             </div>
 
             

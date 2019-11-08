@@ -1,6 +1,6 @@
 #action{
-    height: 4vh;
-    width: 7vw;
+    height: 3vh;
+    width: 5vw;
     color: rgb(253, 253, 253);
    margin: 5px;
    padding: 5px;
@@ -41,14 +41,21 @@ td{
 .pend{
     background-color: rgb(77, 107, 74);
 }
+#pending{
+    color: rgb(21, 99, 13);
+}
 .reject{
     background-color: rgb(153, 61, 24);
 }
 .resolve{
     background-color: rgb(44, 107, 36);
 }
+#resolve{
+   color: rgb(50, 141, 38);
+}
 .inv{
     background-color: rgb(63, 101, 122);
+    font-size: 16px;
 }
 .delete{
     background-color: rgb(143, 83, 83);
@@ -86,4 +93,17 @@ td{
 }
 table a{
     color: rgb(56, 55, 56);
+}
+.status{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 5fr;
+    width: 60%;
+    padding: 20px;
+    float: left;
+}
+#reject{
+    color: rgb(173, 16, 16);
+}
+#inve{
+    color: rgb(16, 117, 163);
 }

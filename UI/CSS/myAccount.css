@@ -1,0 +1,20 @@
+.Container{
+    background-image: url(../Assets/photo.jpg);
+    background-size: cover;
+    height: 110vh auto;
+    }
+    .big-container{
+        display: grid;
+        grid-template-columns: 1.3fr 7fr;
+    }
+    .left-NavBbar{
+        background-color: rgba(54, 47, 40, 0.39);
+        height: 100vh;
+    }
+    .Report{
+        height: 100vh auto;
+        background-color: rgb(240, 235, 230);
+    }
+    #pending{
+        background-color: rgb(6, 88, 31);
+    }
