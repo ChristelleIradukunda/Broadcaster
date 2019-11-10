@@ -9,7 +9,7 @@
 }
 .NavBar{
     display: grid;
-    grid-template-columns: 6fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 7fr 2fr 2fr 1.5fr;
     color: blanchedalmond;
     font-size: 20px;
     height: 9vh;
@@ -33,7 +33,7 @@
     position: absolute;
     transform: translate(-50%, 50%);
     width: 70%;
-    font-size: 20px;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -143,4 +143,11 @@ video{
     }
        
    }
-
+.footer-info ul li {
+    padding: 1%;
+    font-size: 17px;
+}
+.footer-info h3{
+    margin-bottom: 3%;
+    font-size: 1.2em;
+}

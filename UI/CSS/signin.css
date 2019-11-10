@@ -28,7 +28,7 @@ background-size: cover;
 .login{
     width: 70vw;
     height: 70vh;
-    background: rgba(78, 83, 94, 0.404);
+    background: rgba(49, 53, 63, 0.404);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -66,6 +66,9 @@ input[type="text"]{
     text-align: center;
     font-size: 19px;
 }
+.admin{
+    background-color: rgb(20, 94, 20);
+}
 a{
     text-decoration: none;
 }
@@ -79,7 +82,7 @@ a{
 
 .create-new a{
     text-decoration: none;
-    color: rgb(39, 78, 33);
+    color: rgb(202, 177, 66);
     margin: 40px;
     font-size: 19px;
 }
@@ -88,13 +91,12 @@ a{
     margin: 40px 0px 10px 0px; 
     font-size: 19px;
 }
+.create-new #admin{
+    color: rgb(73, 231, 59);
+}
 
-.close {
-    color: rgb(112, 11, 11);
-    font-size: 35px;
-    cursor: pointer;
-    font-weight: bold;
-    float: right;
+  .login img{
+      border-radius: 50%;
   }
 
   

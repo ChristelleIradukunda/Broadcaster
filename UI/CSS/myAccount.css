@@ -2,7 +2,9 @@
     background-image: url(../Assets/photo.jpg);
     background-size: cover;
     height: 110vh auto;
-    }
+  
+}
+
     .big-container{
         display: grid;
         grid-template-columns: 1.3fr 7fr;
@@ -14,7 +16,17 @@
     .Report{
         height: 100vh auto;
         background-color: rgb(240, 235, 230);
+        padding-bottom: 15%;
     }
     #pending{
         background-color: rgb(6, 88, 31);
+    }
+    .tableArea a:hover{
+       color: rgb(13, 97, 139);;
+    }
+    .green{
+        background-color: rgb(175, 115, 115);
+    }
+    .green:hover{
+        background-color: rgb(143, 51, 51);
     }
