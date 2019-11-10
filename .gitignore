@@ -2,3 +2,5 @@ node_modules
 package-lock.json
 .env
 try.html
+index.js
+server.js
