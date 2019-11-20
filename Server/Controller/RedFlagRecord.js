@@ -39,6 +39,8 @@ const GetAll = (req, res) =>{
   });
 }
 
-export default postNew;
+
+  
+export {postNew, GetAll};
 
 
