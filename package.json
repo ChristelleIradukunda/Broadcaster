@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "^6.6.0",
+    "mocha": "^6.2.2",
     "nodemon": "^1.19.4"
   }
 }
