@@ -1,19 +1,44 @@
 import redFlag from '../Models/db';
+import validatePost from '../Validation/recordValidation'
 
-const SignIn= (req, res) => {
+const postNew = (req, res) => {
+
+  const { error } = validatePost.validation(req.body);
+  if (error) {
+      res.status(400).json({
+          status: 400,
+          error: error.details[0].message,
+      });
+      return;
+  }
+
+  const Id = redFlag.length + 1;
 let newRecord = {
 
-    id: parseInt(req.body.id),
-    date: req.body.title,
-    location:req.body.title.location, 
+    Id,
+    date: req.body.date,
+    createdBy: req.body.createdBy,
     title: req.body.title,
-    description: req.body.description, 
+    type: req.body.type,
+    location: req.body.location, 
+    status: req.body.status,
+    comment: req.body.comment
   };
 
   redFlag.push(newRecord);
   res.status(200).json(newRecord);
 
 };
+// ============================== Gel All ====================================
 
-export default SignIn;
+const GetAll = (req, res) =>{
+  res.status(200).json({
+    status:201,
+    message: 'Data retrieved succesfully',
+    data: redFlag
+  });
+}
+
+export default postNew;
+
 
