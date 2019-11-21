@@ -56,9 +56,23 @@ const getOne = (req, res) => {
   
   // ============================== Delete One ================================
 
+  const DeleteOne = (req, res) => {
+    let removeOne = redFlag.find(foundId => foundId.id === parseInt(req.params.id));
+    if(removeOne){
+      let index = redFlag.indexOf(removeOne);
+      redFlag.splice(index, 1);
+      res.status(201).json({
+        status:201,
+        message: 'Record deleted sucessfully'
+      });
+    }
+    else {
+      res.status(404).json({
+        message: 'Red flag not found',
+        status: 404
+      });
+    }}
   
-
-
-export {postNew, GetAll, getOne};
+export {postNew, GetAll, getOne, DeleteOne};
 
 
