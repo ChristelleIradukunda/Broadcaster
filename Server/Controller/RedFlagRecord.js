@@ -12,10 +12,10 @@ const postNew = (req, res) => {
       return;
   }
 
-  const Id = redFlag.length + 1;
+  const id = redFlag.length + 1;
 let newRecord = {
 
-    Id,
+    id,
     date: req.body.date,
     createdBy: req.body.createdBy,
     title: req.body.title,
@@ -39,8 +39,26 @@ const GetAll = (req, res) =>{
   });
 }
 
+// ========================= Get One ==========================================
+
+const getOne = (req, res) => {
+  let findOne = redFlag.find(record => record.id === parseInt(req.params.id));
+  if(findOne){
+      res.status(201).json(findOne);  
+  }
+  else {
+      res.status(404).json({
+        message: 'Record not found',
+        status: 404
+      });
+    }
+  };
+  
+  // ============================== Delete One ================================
 
   
-export {postNew, GetAll};
+
+
+export {postNew, GetAll, getOne};
 
 
