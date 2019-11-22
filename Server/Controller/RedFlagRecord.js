@@ -1,5 +1,5 @@
 import redFlag from '../Models/db';
-import validatePost from '../Validation/recordValidation'
+import {validatePost, validateModify} from '../Validation/recordValidation'
 
 const postNew = (req, res) => {
 
@@ -72,7 +72,35 @@ const getOne = (req, res) => {
         status: 404
       });
     }}
-  
-export {postNew, GetAll, getOne, DeleteOne};
+
+
+  // ======================================== Modify ==============================================
+
+    
+  const modifyRecord = (req, res) => {
+    const { error } = validateModify.validation(req.body);
+    if (error) {
+        res.status(400).json({
+            status: 400,
+            error: error.details[0].message,
+        });
+        return;
+    }
+    let finder = redFlag.find(search => search.id === parseInt(req.params.id));
+
+    if(finder) res.status(201).json({
+      status:201,
+      message:'Report updated sucessfully'  
+    });
+    
+        finder.title = req.body.title,
+        finder.type = req.body.type,
+        finder.location = req.body.location, 
+        finder.comment = req.body.comment
+    
+  } 
+
+
+export {postNew, GetAll, getOne, DeleteOne, modifyRecord};
 
 
