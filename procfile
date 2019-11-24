@@ -1,2 +1,2 @@
 web: node build/app.js
-"start":"nodemon ./Server/app.js"
+"start": "nodemon --exec babel-node ./Server/app.js"
