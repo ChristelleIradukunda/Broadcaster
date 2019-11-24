@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
-import users from '../Models/users';
+import {users} from '../Models/db';
 import validateUser from '../Validation/userValidation';
 
 
@@ -38,6 +38,7 @@ const SignUp = (req, res) => {
         email: req.body.email,
         password: hide
     }
+
     const payload = {
         userId: newUser.userId,
         email: newUser.email,
@@ -54,10 +55,6 @@ const SignUp = (req, res) => {
         data: token
     });
 }
-
-
-
-
 export default SignUp;
 
 

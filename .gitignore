@@ -1,7 +1,7 @@
 node_modules
 package-lock.json
 .env
-try.html
 index.js
 Get.js
 getOne.js
+trial.js

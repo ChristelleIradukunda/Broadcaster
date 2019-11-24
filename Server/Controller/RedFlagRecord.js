@@ -1,5 +1,6 @@
 import redFlag from '../Models/db';
-import {validatePost, validateModify} from '../Validation/recordValidation'
+import {validatePost, validateModify} from '../Validation/recordValidation';
+import moment from 'moment';
 
 const postNew = (req, res) => {
 
@@ -12,11 +13,11 @@ const postNew = (req, res) => {
       return;
   }
 
-  const id = redFlag.length + 1;
+  // const id = redFlag.length + 1;
 let newRecord = {
 
-    id,
-    date: req.body.date,
+    id: req.body.id,
+    date: moment().format('ll'),
     createdBy: req.body.createdBy,
     title: req.body.title,
     type: req.body.type,
@@ -102,5 +103,3 @@ const getOne = (req, res) => {
 
 
 export {postNew, GetAll, getOne, DeleteOne, modifyRecord};
-
-
