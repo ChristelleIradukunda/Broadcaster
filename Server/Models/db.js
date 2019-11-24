@@ -1,5 +1,5 @@
-const redFlag = [
+const redFlag = []; 
+const users = [];
 
-]; 
+export { users, redFlag};
 
-export default redFlag;
