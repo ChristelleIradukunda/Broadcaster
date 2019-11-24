@@ -1,10 +1,10 @@
-import redFlag from '../Models/db';
+import {redFlag, users} from '../Models/db';
 import {validatePost, validateModify} from '../Validation/recordValidation';
 import moment from 'moment';
 
 const postNew = (req, res) => {
 
-  const { error } = validatePost.validation(req.body);
+const { error } = validatePost.validation(req.body);
   if (error) {
       res.status(400).json({
           status: 400,
@@ -12,11 +12,18 @@ const postNew = (req, res) => {
       });
       return;
   }
-
-  // const id = redFlag.length + 1;
+  const findID = users.find(checkID => checkID.id === req.body.id);
+  if (!findID) {
+      res.status(400).json({
+          status: 400,
+          message: 'unauthorized access'
+      });
+      return;
+  }else{
+  const id = redFlag.length + 1;
 let newRecord = {
 
-    id: req.body.id,
+    id,
     date: moment().format('ll'),
     createdBy: req.body.createdBy,
     title: req.body.title,
@@ -29,7 +36,7 @@ let newRecord = {
   redFlag.push(newRecord);
   res.status(200).json(newRecord);
 
-};
+}}
 // ============================== Gel All ====================================
 
 const GetAll = (req, res) =>{
