@@ -1,1 +1,2 @@
-web: npm start
+web: node build/app.js
+"start":"nodemon  ./Server/app.js"
