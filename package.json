@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel Server -d build",
-    "starts": "babel-node ./Server/app.js",
+    "start": "babel-node ./Server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node ./Server/app.js"
+    "starts": "nodemon --exec babel-node ./Server/app.js"
   },
   "repository": {
     "type": "git",
