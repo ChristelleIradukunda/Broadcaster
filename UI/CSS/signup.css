@@ -4,7 +4,7 @@
 }
 .NavBar{
     display: grid;
-    grid-template-columns: 6fr 2fr 2fr 2fr;
+    grid-template-columns: 9fr 1fr 1fr;
     color: blanchedalmond;
     font-size: 20px;
     height: 9vh;
@@ -102,7 +102,7 @@ a{
     height: 5vh;
     text-align: center;
     padding: 8px 0px 0px 0px;
-    background-color: rgb(192, 77, 35);
+    background-color:rgb(3, 56, 73);
     margin: 10px 19%;
     font-size: 19px;
     outline: orangered;
@@ -112,11 +112,12 @@ a{
 .imge p{
     color: white;
     font-size: 20px;
-    margin-top: 20px;
+    margin: 2%;
 }
 .imge a{
     text-decoration: none;
-    color: rgb(184, 81, 44);
-    font-weight: 700;
+    color: rgb(190, 130, 16);
+    font-weight: 600;
     font-size: 20px;
 }
+
