@@ -1,7 +1,6 @@
 #action{
     height: 3vh;
     width: 5vw;
-    color: rgb(253, 253, 253);
    margin: 5px;
    padding: 5px;
 
@@ -39,22 +38,22 @@ td{
     margin: 2% 0px 0px 7%;
 }
 .pend{
-    background-color: rgb(77, 107, 74);
+    color: rgb(77, 107, 74);
 }
 #pending{
     color: rgb(21, 99, 13);
 }
 .reject{
-    background-color: rgb(153, 61, 24);
+   color: rgb(153, 61, 24);
 }
 .resolve{
-    background-color: rgb(44, 107, 36);
+    color: rgb(44, 107, 36);
 }
 #resolve{
    color: rgb(50, 141, 38);
 }
 .inv{
-    background-color: rgb(63, 101, 122);
+    color: rgb(63, 101, 122);
     font-size: 16px;
 }
 .delete{
