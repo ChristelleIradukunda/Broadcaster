@@ -12,6 +12,9 @@ const { error } = validatePost.validation(req.body);
       });
       return;
   }
+
+  console.log(req.body.id);
+    
   const findID = users.find(checkID => checkID.id === req.body.id);
   if (!findID) {
       res.status(400).json({

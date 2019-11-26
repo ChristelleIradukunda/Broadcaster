@@ -5,7 +5,7 @@
 
 .NavBar{
     display: grid;
-    grid-template-columns: 7fr .5fr .5fr .5fr;
+    grid-template-columns: 7fr .5fr .5fr;
     color: blanchedalmond;
     font-size: 20px;
     height: 9vh;
@@ -131,8 +131,9 @@ a{
     display: grid;
     grid-template-columns: 5fr 5fr;
     position: absolute;
-    left: 55%;
-    top:80%;
+    left: 58%;
+    top:75%;
+    text-align: center;
     transform: translate(-50%, -50%);
     grid-gap: 10%;
     font-size: 18px;
@@ -180,7 +181,7 @@ table tr td{
 }
 
 .status-report{
-background-color: rgb(27, 98, 100);
+background-color: rgb(77, 128, 129);
 color: white;
 margin: 20px;
 height: 9vh;
@@ -203,9 +204,10 @@ table{
     width: 50%;
 }
 .status-title{
-height: 5vh;
-background-color: gray;
+background-color: rgb(143, 138, 138);
 text-align: center;
 color: white;
 margin: 3%;
+padding: 0.5%;
+font-size: 20px;
 }

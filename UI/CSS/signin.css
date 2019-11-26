@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: serif;
+}
 .image{
     background-image: url(../Assets/photo.jpg);
     height: 100vh;
@@ -9,7 +12,7 @@ background-size: cover;
 }
 .NavBar{
     display: grid;
-    grid-template-columns: 6fr 2fr 2fr 2fr;
+    grid-template-columns: 9fr 1fr 1fr;
     color: blanchedalmond;
     font-size: 20px;
     height: 9vh;
@@ -28,7 +31,7 @@ background-size: cover;
 .login{
     width: 70vw;
     height: 70vh;
-    background: rgba(49, 53, 63, 0.404);
+    background-color: rgba(107, 156, 156, 0.466);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -38,8 +41,10 @@ background-size: cover;
     color: white;
     text-align: center;
     margin: 20px;
-    font-size: 25px;
+    font-size: 22px;
     padding: 0px 10px 50px 0px;
+    font-weight: 700;
+    font-family: serif;
 }
 form{
     position: absolute;
@@ -54,10 +59,11 @@ input[type="text"]{
     width: 20vw;
     height: 5vh;
     font-size: 17px;
-   
+    outline: none;
+    border-radius: 2px;
 }
 .login-btn{
-    background-color: rgb(220, 110, 20);
+    background-color:rgb(3, 56, 73);
     padding: 5px;
     color: white;
     width: 13vw;
@@ -67,7 +73,8 @@ input[type="text"]{
     font-size: 19px;
 }
 .admin{
-    background-color: rgb(20, 94, 20);
+    background-color: rgb(18, 62, 82);
+    
 }
 a{
     text-decoration: none;
@@ -82,9 +89,11 @@ a{
 
 .create-new a{
     text-decoration: none;
-    color: rgb(202, 177, 66);
+    color: rgb(180, 106, 8);
     margin: 40px;
     font-size: 19px;
+    font-weight: 700;
+    
 }
 
 .create-new p{
@@ -92,7 +101,8 @@ a{
     font-size: 19px;
 }
 .create-new #admin{
-    color: rgb(73, 231, 59);
+    color: rgb(22, 78, 97);
+    
 }
 
   .login img{
