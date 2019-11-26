@@ -11,7 +11,7 @@ body{
     height: 7vh;
     background-size:cover;
     display: grid;
-    grid-template-columns: 7fr .5fr .5fr 1fr;;
+    grid-template-columns: 9fr  1fr;;
     color: blanchedalmond; height: 100vh;
     background-size:cover;
     font-size: 20px;
@@ -32,7 +32,7 @@ body{
     background-color:  rgb(187, 187, 184);
     width: 60%;
     left: 50%;
-    top: -8%;
+    top: -25%;
     position: absolute;
     transform: translate(-50%, 50%);
     color: rgb(50, 50, 77);
@@ -64,13 +64,16 @@ tr td{
 }
 .home {
     background-color: rgb(197, 189, 189);
+    color: white;
 }
 #hme{
     padding: 8px;
+    
 }
 #hme a{
     text-decoration: none;
-    color: rgb(27, 27, 27);
+    color: white;
+    font-size:20px ;
 }
 .report{
     background-color: rgb(190, 97, 21);
@@ -78,8 +81,9 @@ tr td{
     height: 5vh;
     text-align: center;
     color: white;
-    padding-top:10px;
     margin: 60px 0px 20px 300px;
+    padding:.7%;
+    font-size: 1.1em;
     
 }
 .what{
