@@ -1,7 +1,7 @@
 import joi from 'joi';
 
-const validateUser = {
-    validation (SignUpUser){
+const validateUser = (req, res, next) =>{
+   
         const schema = {
             firstname: joi.string().trim().min(3).max(30).required(),
             lastname: joi.string().trim().min(3).max(30).required(),
@@ -11,8 +11,13 @@ const validateUser = {
             password: joi.string().trim().min(4).max(100).required()
           }
               
-          return joi.validate(SignUpUser, schema )
-        }
+          const result =  joi.validate(req.body, schema);
+          if (result.error){
+          res.status(400).send(result.error);
+            return;
+          
+          }
+        return next();
     }
 
  

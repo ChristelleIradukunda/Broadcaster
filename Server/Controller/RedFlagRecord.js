@@ -1,28 +1,9 @@
-import {redFlag, users} from '../Models/db';
-import {validatePost, validateModify} from '../Validation/recordValidation';
+import {redFlag} from '../Models/db';
+
 import moment from 'moment';
 
 const postNew = (req, res) => {
 
-const { error } = validatePost.validation(req.body);
-  if (error) {
-      res.status(400).json({
-          status: 400,
-          error: error.details[0].message,
-      });
-      return;
-  }
-
-  console.log(req.body.id);
-    
-  const findID = users.find(checkID => checkID.id === req.body.id);
-  if (!findID) {
-      res.status(400).json({
-          status: 400,
-          message: 'unauthorized access'
-      });
-      return;
-  }else{
   const id = redFlag.length + 1;
 let newRecord = {
 
@@ -39,12 +20,12 @@ let newRecord = {
   redFlag.push(newRecord);
   res.status(200).json(newRecord);
 
-}}
+}
 // ============================== Gel All ====================================
 
 const GetAll = (req, res) =>{
   res.status(200).json({
-    status:201,
+    status:200,
     message: 'Data retrieved succesfully',
     data: redFlag
   });
@@ -89,27 +70,21 @@ const getOne = (req, res) => {
 
     
   const modifyRecord = (req, res) => {
-    const { error } = validateModify.validation(req.body);
-    if (error) {
-        res.status(400).json({
-            status: 400,
-            error: error.details[0].message,
-        });
-        return;
-    }
+    
     let finder = redFlag.find(search => search.id === parseInt(req.params.id));
 
     if(finder) res.status(201).json({
       status:201,
-      message:'Report updated sucessfully'  
+      message:'Report updated sucessfully'
+      
     });
     
         finder.title = req.body.title,
         finder.type = req.body.type,
         finder.location = req.body.location, 
         finder.comment = req.body.comment
-    
+  
   } 
-
+ 
 
 export {postNew, GetAll, getOne, DeleteOne, modifyRecord};
