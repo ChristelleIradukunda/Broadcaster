@@ -2,19 +2,12 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import {users} from '../Models/db';
-import validateUserSignIn from '../Validation/ValidateSignIn';
+
 
 dotenv.config();
 
 const signIn = (req, res) => {
-    const { error } = validateUserSignIn.validation(req.body);
-    if (error) {
-        res.status(400).json({
-            status: 400,
-            error: error.details[0].message,
-        });
-        return;
-    }
+   
     const findEmail = users.find(checkEmail => checkEmail.email === req.body.email);
     if (!findEmail) {
         res.status(400).json({
