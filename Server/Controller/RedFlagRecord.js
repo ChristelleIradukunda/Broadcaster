@@ -85,6 +85,4 @@ const getOne = (req, res) => {
         finder.comment = req.body.comment
   
   } 
- 
-
 export {postNew, GetAll, getOne, DeleteOne, modifyRecord};

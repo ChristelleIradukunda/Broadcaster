@@ -7,7 +7,8 @@
     "build": "babel Server -d build",
     "start": "babel-node ./Server/app.js",
     "test": "nyc --reporter=html --reporter=text mocha --require @babel/register ./Server/Test/* --exit || true",
-    "starts": "nodemon --exec babel-node ./Server/app.js"
+    "starts": "nodemon --exec babel-node ./Server/app.js",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "bcrypt": "^3.0.6",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
+    "coveralls": "^3.0.9",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "heroku": "^7.35.0",

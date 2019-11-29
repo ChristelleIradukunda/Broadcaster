@@ -10,7 +10,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
 app.use('/', Router);
 const port = 3001;
 app.listen(process.env.PORT || port, function (){

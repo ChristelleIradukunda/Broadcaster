@@ -1,101 +1,80 @@
-import chai, { expect } from 'chai';
+/* eslint-disable no-undef */
+import chai from 'chai';
 import chaiHTTP from 'chai-http';
 import app from '../app';
 
 
 chai.use(chaiHTTP);
+const {expect} = chai;
 
 // ================================ Test Get Endpoint ================================================
 const userInfo = {
   firstname: 'John',
   lastname: 'Smith',
-  phonenumber: 78650000,
+  phoneNumber: 78650000,
   email: 'john@gmail.com',
-  password:'123'
+  userName: 'John123',
+  password:'12'
 
 };
-const records = {
-  title: 'Corruption at Nyakabanda sector',
-  type: 'Corruption',
-  location: 'Nyakabanda',
-  status: 'pending',
-  comment:'Three men reicieved corrution to make first services'
 
-};
 describe('Testing APIs', () => {
-  it('Checking the status of the api', (tester) => {
+  it('Checking the status when info is wrong', (done) => {
+    chai
+      .request(app)
+      .post('/api/v1/signup')
+      .send(
+        {email: 'john@gmail.com',
+        password:'12'}
+      )
+      .end((err, res) => {
+        expect(res.status).to.equals(400);
+        done();
+       
+      });
+  });
+  
+  it('Checking the sign in api', (done) => {
+    chai
+      .request(app)
+      .post('/api/v1/signup')
+      .send(userInfo)
+      .end((err, res) => {
+        expect(res.status).to.equals(400);
+        done();
+       
+      });
+  });
+
+  it('Checking the post api', (done) => {
+    chai
+      .request(app)
+      .post('/api/v1/redflag')
+      .send(userInfo)
+      .end((err, res) => {
+        expect(res.status).to.equals(400);
+        done();
+       
+      });
+  });
+  it('Checking GET api', (done) => {
     chai
       .request(app)
       .get('/api/v1/redflag')
       .end((err, res) => {
         expect(res.status).to.equals(400);
-        expect(res.body).to.be.an('object');
-        tester();
+        done();
+       
       });
   });
-  it('Checking data to be Entered', (tester) => {
+  it('Checking DELETE api', (done) => {
     chai
       .request(app)
-      .get('/api/v1/redflag/:id')
+      .delete('/api/v1/redflag/:id')
       .end((err, res) => {
         expect(res.status).to.equals(400);
-        expect(res.firstname).to.not.be.an('');
-        tester();
+        done();
       });
-  });
-  it('Checking the user info is not empty', (tester) => {
-    chai
-      .request(app)
-      .post('/api/v1/redflag')
-      .send(userInfo)
-      .end((err, res) => {
-        expect(res.body.firstname).to.not.equal('');
-        expect(res.body.lastname).to.not.be.equal('');
-        expect(res.body.email).to.not.be.equal('');
-        expect(res.body.phonenumber).to.not.be.equal('');
-        tester();
-      });
-  });
-  it('Checking the user info data', (tester) => {
-    chai
-      .request(app)
-      .post('/api/v1/redflag')
-      .send(userInfo)
-      .end((err, res) => {
-        expect(res.status).to.be.equal(400);
-        tester();
-      });
-      it('Checking modify api', (tester) => {
-        chai
-          .request(app)
-          .put('/api/v1/redflag/:id')
-          .send(records)
-          .end((err, res) => {
-            expect(res.status).to.be.equal(400);
-            tester();
-          });
-        });
-
-        it('Checking sign up ', (tester) => {
-          chai
-            .request(app)
-            .post('/api/v1/signup')
-            .send(userInfo)
-            .end((err, res) => {
-              expect(res.status).to.be.equal(400);
-              tester();
-            });
-          });
-          it('Checking sign in ', (tester) => {
-            chai
-              .request(app)
-              .post('/api/v1/signin')
-              .send(userInfo)
-              .end((err, res) => {
-                expect(res.status).to.be.equal(400);
-                tester();
-              });
-            });  
   });
 });
 
