@@ -36,7 +36,7 @@ const GetAll = (req, res) =>{
 const getOne = (req, res) => {
   let findOne = redFlag.find(record => record.id === parseInt(req.params.id));
   if(findOne){
-      res.status(201).json(findOne);  
+      res.status(200).json(findOne);  
   }
   else {
       res.status(404).json({
